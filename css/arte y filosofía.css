@@ -1,0 +1,575 @@
+/*Definir estilos para el body*/
+body{
+    line-height: 1.6;
+    background-color: #f5f5dc;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #2d3e50; /*Color de fondo*/
+    color: #82a1e7; /*Color de la fuente*/
+    padding: 10px 0;
+    position:fixed;
+    width: 100%; /*Ocupa todo el ancho de la ventana del navegador*/
+    top: 0;
+    z-index: 1000;
+
+}
+header .container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1{
+    margin: 0;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    margin: 0 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #82a1e7;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #f4a261;
+}
+
+/*Estilos para el bloque hero*/
+.hero{
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #82a1e7;
+    padding: 0 20px;
+    margin-top: 70px;
+}
+.hero h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/*Estilos para el bloque section*/
+.section {
+    padding: 60px 20px;
+    background-color: #f5f5dc;
+}    
+
+.section:nth-child(even){
+    background-color: #f5f5dc;
+}
+
+.arte {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.creaciones {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.creacion-escena {
+    flex: 1;
+    margin: 15px;
+    padding: 20px;
+    background-color: #f5f5dc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.creacion-escena h2 {
+    color: #4a6a8b;
+    font-size:35px;
+    text-align: center;
+}
+
+.creacion-escena p {
+    color:#4a4a4a;
+    font-size: 27px;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Estilos para el bloque linea*/
+.tiempos {
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 0px;
+}
+.tiempos h2 {
+    color: #4a6a8b;
+    font-size: 35px;
+    text-align: center;
+}
+.linea {
+    background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+}
+/*La linea de tiempo real (la regla vertical)*/
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*La linea de tiempo real (la regla vertical)*/
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+  
+/*Contenedores alrededor del contenido*/
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+/*Los circulos en la linea de tiempo*/
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1; 
+}
+/*Colocar el contenedor a la izquierda*/
+.left {
+    left: 0;
+}
+/*Colocar el contenedor a la derecha*/
+.right {
+    left: 50%;
+}
+/*flechas en el contenedor izquierdo (apuntando hacia la derecha)*/
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+/*flechas en el contenedor derecha (apuntando hacia la izquierda)*/
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+/*Arreglar el circulo para los contenedores del lado derecho*/
+.right::after {
+    left: -16px;
+}
+/*El contenido real*/
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+.content h3 {
+    color: #4a6a8b;
+    font-size:25px;
+    text-align: center;
+}
+.content h4 {
+    color: #4a6a8b;
+    font-size:23px;
+    text-align: center;
+}
+.content p {
+    color:#4a4a4a;
+    font-size: 18px;
+    text-align: left;
+}
+
+/*Estilo para el bloque redes*/
+.redes {
+    color: #4a4a4a;
+    font-size: 27px;
+    text-align: center;
+}
+
+/*Estilo para el bloque redes*/
+.redes {
+    text-align: center;
+    font-size: 25px;
+}
+
+.redes h2 {
+    color: #4a6a8b;
+    font-size: 35px;
+    text-align: center;
+}
+.fa {
+    padding: 20px;
+    font-size:30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.fa-youtube {
+    background-color: #bb0000;
+    color: white;
+}
+
+.fa-twitter {
+    background-color: #55acee;
+    color: white;
+}
+
+.fa-pinterest {
+    background-color: #cb2027;
+    color: white;
+}
+
+.fa-instagram {
+    background-color: #125688;
+    color: white;
+}
+
+@media (max-width:1024px){
+    .hero{
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding: 17px 0;
+    }
+
+    .hero h1{
+        font-size: 47px;
+        padding: 0px 17px;
+    }
+
+    .section{
+        padding: 17px 0;
+    }
+
+    .creacion-escena{
+        margin: 15px;
+        padding: 17px;
+        column-width: 500px;
+    }
+
+    .creacion-escena h2{
+        margin-top: 0px;
+        font-size: 34px;
+    }
+
+    .creacion-escena p{
+        font-size: 26px;
+    } 
+    
+    .tiempos{
+        padding: 15px 0;
+    }
+
+    .tiempos h2{
+        font-size: 34px;
+        margin-top: 0px;
+    }
+
+    .content h3{
+        font-size: 24px;
+    }
+
+    .content h4{
+        font-size: 22px;
+    }
+
+    .content p{
+        font-size: 17px;
+    }
+
+    .redes h2{
+        font-size: 34px;
+        margin-bottom: 0px;
+    }
+
+    .fa {
+        padding: 17px;
+        font-size:30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px;
+        border-radius: 50%;
+    }
+    
+    .logo h1{
+        font-size: 32px;
+    }
+
+    .nav-list{
+        font-size: 15px;
+    }
+}
+@media (max-width:779px){
+    .nav-list{
+        font-size: 14px;
+    }
+}
+@media (max-width:768px){
+    .hero{
+        margin-top: 60px;
+        margin-bottom: 0px;
+        padding: 15px 0;
+    }
+
+    .hero h1{
+        font-size: 42px;
+        padding: 0px 15px;
+    }
+
+    .section{
+        padding: 15px 0;
+    }
+
+    .creacion-escena{
+        margin: 15px;
+        padding: 10px;
+        column-width: 500px;
+    }
+
+    .creacion-escena h2{
+        margin-top: 0px;
+        font-size: 32px;
+    }
+
+    .creacion-escena p{
+        font-size: 21px;
+    }  
+
+    .tiempos{
+        padding: 10px 0;
+    }
+
+    .tiempos h2{
+        font-size: 32px;
+        margin-top: 0px;
+    }
+
+    .content h3{
+        font-size: 23px;
+    }
+
+    .content h4{
+        font-size: 21px;
+    }
+
+    .content p{
+        font-size: 16px;
+    }
+
+    .redes h2{
+        font-size: 32px;
+        margin-bottom: 0px;
+    }
+
+    .fa {
+        padding: 15px;
+        font-size:30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px;
+        border-radius: 50%;
+    }
+    
+    .logo h1{
+        font-size: 27px;
+    }
+
+    .nav-list{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:725px){
+    .nav-list{
+        font-size: 12px;
+    }
+    .hero{
+        margin-top: 50px;
+    }
+}
+@media (max-width:696px){
+    .hero{
+        margin-top: 95px;
+    }
+}
+@media (max-width:575px){
+    .hero{
+        margin-top: 100px;
+    }
+    .nav-list{
+        flex-direction: column;
+        font-size: 11px;
+    }
+}
+
+@media (max-width:480px){
+    .hero{
+        margin-top: 150px;
+        margin-bottom: 0px;
+        padding: 10px 0;
+    }
+
+    .hero h1{
+        font-size: 36px;
+        padding: 0px 20px;
+    }
+    
+    .section{
+        padding: 10px 0;
+    }
+
+    .creacion-escena{
+        margin: 15px;
+        padding: 10px;
+        column-width: 500px;
+    }
+
+    .creacion-escena h2{
+        margin-top: 0px;
+        font-size: 30px;
+    }
+
+    .creacion-escena p{
+        font-size: 15px;
+    }  
+
+    .tiempos{
+        padding: 10px 0;
+    }
+
+    .tiempos h2{
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    .timeline::after{
+        left: 31px;
+    }
+
+    .container{
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container::before{
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after, .right::after{
+        left: 15px;
+    }
+
+    .content h3{
+        font-size: 22px;
+    }
+
+    .content h4{
+        font-size: 20px;
+    }
+
+    .content p{
+        font-size: 15px;
+    }
+
+    .right{
+        left: 0%;
+    }
+
+    .redes h2{
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    .fa {
+        padding: 10px;
+        font-size:30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+    .logo h1{
+        font-size: 27px;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        font-size: 11px;
+    }
+}
+
+@media (max-width:263px){
+    .nav-list{
+        padding-left: 0;
+    }
+}

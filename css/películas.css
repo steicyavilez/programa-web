@@ -1,0 +1,662 @@
+/*Definir estilos para el body*/
+body{
+    line-height: 1.6;
+    background-color: #f5f5dc;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #2d3e50; /*Color de fondo*/
+    color: #82a1e7; /*Color de la fuente*/
+    padding: 10px 0;
+    position:fixed;
+    width: 100%; /*Ocupa todo el ancho de la ventana del navegador*/
+    top: 0;
+    z-index: 1000;
+
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1{
+    margin: 0;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    margin: 0 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #82a1e7;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #f4a261;
+}
+
+/*Estilos para el bloque hero*/
+.hero{
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #82a1e7;
+    padding: 0 20px;
+    margin-top: 70px;
+}
+.hero h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/*Estilos para el bloque pelis*/
+.pelis{
+    padding: 60px 20px;
+    background-color: #f5f5dc;
+}
+
+.pelis:nth-child(even){
+    background-color: #f5f5dc;
+}
+
+.destacadas {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.introduccion{
+    background-color: #f5f5dc;
+}
+
+.introduccion h2{
+    color: #4a6a8b;
+    text-align: left;
+    justify-content: left;
+    font-size: 35px;
+    text-align: left;
+}
+
+.introduccion p {
+    color: #4a4a4a;
+    text-align: left;
+    justify-content: left;
+    font-size: 27px;
+    text-align: left;
+}
+.obras {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.obra-texto {
+    flex: 1;
+    margin: 15px;
+    padding: 20px;
+    background-color: #f5f5dc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.obra-texto h3{
+    color: #6c8fa3;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+}
+.obra-texto p {
+    color: #4a4a4a;
+    text-align: center;
+    justify-content: center;
+    font-size: 27px;
+    text-align: center;
+}
+
+.conclusion {
+    background-color: #f5f5dc;
+}
+
+.conclusion p {
+    color: #4a4a4a;
+    text-align: left;
+    justify-content: left;
+    font-size: 27px;
+    text-align: left;
+}
+
+/*Estilos para el bloque informacion*/
+.informacion {
+    padding: 0px 20px;
+    background-color: #f5f5dc;
+}
+
+.informacion:nth-child(even){
+    background-color: #f5f5dc;
+}
+
+.contenido {
+    max-width: 12000px;
+    margin:auto;
+}
+.contenido h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #4a6a8b;
+}
+
+.afiches{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.afiche-imagen {
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    background-color: #f5f5dc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.afiche-imagen h3 {
+    color: #6c8fa3;
+    font-size: 30px;
+    text-align: left;
+}
+
+.afiche-imagen p {
+    color: #4a4a4a;
+    font-size: 27px;
+    text-align: left;
+}
+
+/*Estilos para el bloque galeria*/
+.galeria {
+    margin: 0;
+}
+
+.texto {
+    text-align: center;
+    padding: 32px;
+}
+
+.texto h2{
+    color: #4a6a8b;
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+    text-align: center;
+}
+
+.texto p {
+    color: #4a4a4a;
+    text-align: center;
+    justify-content: center;
+    font-size: 27px;
+    text-align: center;
+}
+.row {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/*Estilo para el bloque redes*/
+.redes {
+    color: #4a4a4a;
+    font-size: 27px;
+    text-align: center;
+}
+
+/*Estilo para el bloque redes*/
+.redes {
+    text-align: center;
+    font-size: 25px;
+}
+
+.redes h2 {
+    color: #4a6a8b;
+    font-size: 35px;
+    text-align: center;
+}
+.fa {
+    padding: 20px;
+    font-size:30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.fa-youtube {
+    background-color: #bb0000;
+    color: white;
+}
+
+.fa-twitter {
+    background-color: #55acee;
+    color: white;
+}
+
+.fa-pinterest {
+    background-color: #cb2027;
+    color: white;
+}
+
+.fa-instagram {
+    background-color: #125688;
+    color: white;
+}
+
+@media (max-width:1024px){
+    .hero{
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding: 17px 0;
+    }
+
+    .hero h1{
+        font-size: 47px;
+        padding: 0px 17px;
+    }
+
+    .pelis{
+        padding: 17px 0;
+    }
+
+    .destacadas{
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .introduccion h2{
+        margin-top: 0px;
+        font-size: 34px;
+    }
+
+    .introduccion p{
+        font-size: 26px;
+    }
+
+    .obra-texto{
+        margin: 15px;
+        padding: 17px;
+    }
+
+    .obra-texto h3{
+        margin-top: 0px;
+        font-size: 29px;
+    }
+
+    .obra-texto p{
+        font-size: 26px;
+    } 
+
+    .conclusion p{
+        font-size: 26px;
+    } 
+
+    .contenido{
+        margin: 15px;
+        padding: 17px;
+    }
+
+    .contenido h2{
+        margin-top: 0px;
+        font-size: 34px;
+    }
+
+    .afiche-imagen h3{
+        font-size: 29px;
+    }
+
+    .afiche-imagen p{
+        font-size: 26px;
+    } 
+
+    .texto h2{
+        margin-top: 0px;
+        font-size: 34px;
+    }
+
+    .texto{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .texto p{
+        font-size: 26px;
+    }
+
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .redes h2{
+        font-size: 34px;
+        margin-bottom: 0px;
+    }
+
+    .fa {
+        padding: 17px;
+        font-size:30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px;
+        border-radius: 50%;
+    }
+    
+    .logo h1{
+        font-size: 32px;
+    }
+
+    .nav-list{
+        font-size: 15px;
+    }
+}
+@media (max-width:779px){
+    .nav-list{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:768px){
+    .hero{
+        margin-top: 60px;
+        margin-bottom: 0px;
+        padding: 15px 0;
+    }
+
+    .hero h1{
+        font-size: 42px;
+        padding: 0px 15px;
+    }
+
+    .pelis{
+        padding: 15px 0;
+    }
+
+    .destacadas{
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .introduccion h2{
+        margin-top: 0px;
+        font-size: 32px;
+    }
+
+    .introduccion p{
+        font-size: 21px;
+    }
+
+    .obra-texto{
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .obra-texto h3{
+        margin-top: 0px;
+        font-size: 27px;
+    }
+
+    .obra-texto p{
+        font-size: 21px;
+    } 
+
+    .conclusion p{
+        font-size: 21px;
+    } 
+
+    .contenido{
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .contenido h2{
+        margin-top: 0px;
+        font-size: 32px;
+    }
+
+    .afiche-imagen h3{
+        font-size: 27px;
+    }
+
+    .afiche-imagen p{
+        font-size: 21px;
+    } 
+
+    .texto h2{
+        margin-top: 0px;
+        font-size: 32px;
+    }
+
+    .texto{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .texto p{
+        font-size: 21px;
+    }
+
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .redes h2{
+        font-size: 32px;
+        margin-bottom: 0px;
+    }
+
+    .fa {
+        padding: 15px;
+        font-size:30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px;
+        border-radius: 50%;
+    }
+    
+    .logo h1{
+        font-size: 27px;
+    }
+
+    .nav-list{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:725px){
+    .nav-list{
+        font-size: 12px;
+    }
+    .hero{
+        margin-top: 50px;
+    }
+}
+@media (max-width:696px){
+    .hero{
+        margin-top: 95px;
+    }
+}
+@media (max-width:575px){
+    .hero{
+        margin-top: 100px;
+    }
+    .nav-list{
+        flex-direction: column;
+        font-size: 11px;
+    }
+}
+
+@media (max-width:480px){
+    .hero{
+        margin-top: 150px;
+        margin-bottom: 0px;
+        padding: 10px 0;
+    }
+
+    .hero h1{
+        font-size: 36px;
+        padding: 0px 20px;
+    }
+
+    .pelis{
+        padding: 10px 0;
+    }
+
+    .destacadas{
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .introduccion h2{
+        margin-top: 0px;
+        font-size: 30px;
+    }
+
+    .introduccion p{
+        font-size: 15px;
+    }
+
+    .obra-texto h3{
+        margin-top: 0px;
+        font-size: 22px;
+    }
+
+    .obra-texto p{
+        font-size: 15px;
+    } 
+
+    .conclusion p{
+        font-size: 15px;
+    } 
+
+    .contenido{
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .contenido h2{
+        margin-top: 0px;
+        font-size: 30px;
+    }
+
+    .afiche-imagen h3{
+        margin-top: 0px;
+        font-size: 22px;
+    }
+
+    .afiche-imagen p{
+        font-size: 15px;
+    } 
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .texto h2{
+        margin-top: 0px;
+        font-size: 30px;
+    }
+
+    .texto{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .texto p{
+        font-size: 15px;
+    }
+
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .redes h2{
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    .fa {
+        padding: 10px;
+        font-size:30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px;
+        border-radius: 50%;
+    }
+    
+    .logo h1{
+        font-size: 27px;
+    }
+
+
+    .nav-list{
+        flex-direction: column;
+        font-size: 11px;
+    }
+    
+}
+
+@media (max-width:263px){
+    .nav-list{
+        padding-left: 0;
+    }
+}
